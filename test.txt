@@ -1,0 +1,16 @@
+sass file structure
+ base
+
+ components
+
+ layout
+
+ pages
+
+ themes
+
+ utils
+
+ vendors
+
+ main.scss
