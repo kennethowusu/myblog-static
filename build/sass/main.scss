@@ -1,7 +1,7 @@
 
 
 //import vendors styles
-@import 'reboot';
+
 
 
 //import utils styles
@@ -11,16 +11,16 @@
 
 
 //import base styles
-@import 'base/reboot',
+@import 'base/reset',
         'base/typography';
 
 
 //import layout styles
-  @import 'layout/reboot';
 
 
+//
 //import component styles
-  @import 'component/button';
+  @import 'components/buttons';
 
 
   //import pages styles
