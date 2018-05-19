@@ -6,7 +6,8 @@
 
 //import utils styles
 @import 'utils/variables',
-        'utils/helpers';
+        'utils/helpers',
+        'utils/mixins';
 
 
 
@@ -20,7 +21,9 @@
 
 //
 //import component styles
-  @import 'components/buttons';
+  @import 'components/buttons',
+          'components/nav',
+          'components/search';
 
 
   //import pages styles
