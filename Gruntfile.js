@@ -23,14 +23,10 @@ module.exports = function(grunt){
         // We need to `freeze` browsers versions for testing purposes.
         browsers: ['opera 12', 'ff 15', 'chrome 25']
     },
-    //
-    // single_file: {
-    //     src: 'test/fixtures/gradient.css',
-    //     dest: 'tmp/single_file.css'
-    // },
-    multiple_files: {
-      src: 'css/*.css',
-      dest: 'css/'
+
+     main_css: {
+      src: 'css/style.css',
+      dest: 'css/style.css'
     }
   },
 
@@ -41,7 +37,7 @@ module.exports = function(grunt){
     },
     scss: {
       files: ['build/sass/**/*'],
-      tasks: ['sass']
+      tasks: ['sass','autoprefixer']
     }
 
   }
