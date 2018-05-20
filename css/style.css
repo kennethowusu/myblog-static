@@ -130,11 +130,14 @@ a:hover {
 .main-menu > .menu-item:last-of-type, .main-menu > .menu-item > .sub-menu > .menu-item:last-of-type {
   border-bottom: 1px solid #eee;
 }
+@media (min-width: 806px) {
+  .main-menu > .menu-item:last-of-type, .main-menu > .menu-item > .sub-menu > .menu-item:last-of-type {
+    border: none;
+  }
+}
 .main-menu > .menu-item > a, .main-menu > .menu-item > .sub-menu > .menu-item > a {
   color: #3b3b3b;
-  font-family: "open sans", "sans serif";
-  font-weight: normal;
-  font-size: 0.875em;
+  font: 0.875em/1.93em "open sans", "sans serif";
 }
 @media (min-width: 806px) {
   .main-menu > .menu-item > a, .main-menu > .menu-item > .sub-menu > .menu-item > a {
@@ -163,9 +166,7 @@ a:hover {
 }
 @media (min-width: 806px) {
   .main-header {
-    display: -webkit-flex !important;
-    display: -moz-box !important;
-    display: flex !important;
+    height: 80px;
     -webkit-justify-content: flex-start;
        -moz-box-pack: start;
             justify-content: flex-start;
@@ -195,7 +196,7 @@ a:hover {
 @media (min-width: 806px) {
   .main-nav-overlay {
     position: static;
-    width: auto;
+    width: auto !important;
     height: auto;
     -webkit-transition: 0s;
        -moz-transition: 0s;
@@ -240,9 +241,6 @@ a:hover {
   }
 }
 
-.main-menu-cont {
-  overflow-y: auto;
-}
 @media (min-width: 806px) {
   .main-menu-cont {
     position: static;
@@ -250,12 +248,12 @@ a:hover {
        -moz-transform: translateX(0) !important;
          -o-transform: translateX(0) !important;
             transform: translateX(0) !important;
-    overflow: hidden;
   }
 }
 
 @media (min-width: 806px) {
   .main-menu {
+    position: static;
     display: -webkit-flex;
     display: -moz-box;
     display: flex;
@@ -268,19 +266,60 @@ a:hover {
     margin-right: 20px;
   }
 }
+@media (min-width: 900px) {
+  .main-menu > .menu-item {
+    margin-right: 30px;
+  }
+}
+@media (min-width: 1080px) {
+  .main-menu > .menu-item {
+    margin-right: 40px;
+  }
+}
 .main-menu > .menu-item > .sub-menu {
   margin-top: 20px;
   display: none;
 }
 @media (min-width: 806px) {
   .main-menu > .menu-item > .sub-menu {
+    margin-top: 10px;
     position: absolute;
-    display: inline-block;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 172px;
+    display: none !important;
+  }
+  .main-menu > .menu-item > .sub-menu::before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    margin-top: -15px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #f2f2f2;
   }
 }
 .main-menu > .menu-item > .sub-menu > .menu-item:last-of-type {
   border-bottom: none;
   padding-bottom: 0;
+}
+@media (min-width: 806px) {
+  .main-menu > .menu-item > .sub-menu > .menu-item {
+    border: none;
+    padding: 10px;
+  }
+}
+@media (min-width: 806px) {
+  .main-menu > .menu-item > .sub-menu > .menu-item > a {
+    font-size: .7em;
+    color: #3b3b3b;
+  }
+}
+.main-menu .menu-item.current-menu-item {
+  color: #FF5E99 !important;
 }
 .main-menu .menu-item.has-children::after {
   content: url("/images/down-arrow.svg");
@@ -294,6 +333,17 @@ a:hover {
           transition: all 0.5s ease-in;
   cursor: pointer;
   text-align: center;
+}
+@media (min-width: 806px) {
+  .main-menu .menu-item.has-children::after {
+    display: none;
+  }
+}
+
+@media (min-width: 806px) {
+  .menu-item.has-children:hover > .sub-menu {
+    display: block !important;
+  }
 }
 
 .nav-close {
