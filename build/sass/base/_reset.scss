@@ -25,4 +25,9 @@ ul,li{
 
 a:hover{
   text-decoration:none;
+  color:$emph-color;
+}
+
+a,h1{
+  color:$text-color;
 }
