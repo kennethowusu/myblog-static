@@ -1,5 +1,9 @@
 <?php
 
+
+   //=====================enable thumbnails====================//
+   add_theme_support( 'post-thumbnails' );
+  
   //=========include scripts and stylesheets================//
   function add_theme_styles( $handle, $src = '', $deps = array(), $ver = false, $in_footer = false ) {
       wp_enqueue_style('main-style',get_template_directory_uri().'/css/style.css');

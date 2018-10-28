@@ -11,7 +11,7 @@ module.exports = function(grunt){
         style: 'expanded'
       },
       files: {
-        'css/style.css': 'build/sass/main.scss'
+        'css/style.css': 'build/sass/style.scss'
         //'widgets.css': 'widgets.scss'
       }
     }
@@ -21,7 +21,7 @@ module.exports = function(grunt){
   autoprefixer:{
     options:{
         // We need to `freeze` browsers versions for testing purposes.
-        browsers: ['opera 12', 'ff 15', 'chrome 25']
+        // browsers: ['opera 12', 'ff 15', 'chrome 25']
     },
 
      main_css: {

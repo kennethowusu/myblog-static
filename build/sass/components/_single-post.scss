@@ -1,0 +1,36 @@
+.single-post{
+  padding:15px;
+}
+.single-post-title{
+  font-size:1.4rem;
+}
+.post-single-thumb{
+  width:100%;
+  max-height:290px;
+}
+
+
+//================FOR CODE====================//
+pre.prettyprinted{
+    background-color: #292929 !important;
+    padding: 17px 17px;
+    border-radius: 4px;
+    box-shadow: 0 0 6px black;
+
+    .kwd{
+      color:#f0f !important;
+    }
+    .pln,.pun{
+      color:#f3f3f3 !important;
+    }
+    .str{
+      color: #04d204 !important;
+    }
+    .lit{
+      color: #b50606 !important;
+    }
+    .com{
+      color: #696969 !important;
+    }
+
+}

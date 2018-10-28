@@ -1,0 +1,31 @@
+//============NXT POST =============//
+.nxt-post{
+
+}
+
+.nxt-post-prev{
+  @media(min-width:625px){
+    border-right:1px solid $border-color;
+  }
+}
+.nxt-post-prev-link{
+  &::before{
+    content:"\f104";
+    font-family:"FontAwesome";
+    margin-right:7px;
+  }
+}
+
+
+.nxt-post-next{
+  @media(min-width:625px){
+    border-left:1px solid $border-color;
+  }
+}
+.nxt-post-next-link{
+  &::after{
+    content:"\f105";
+    font-family:"FontAwesome";
+    margin-left:7px;
+  }
+}
