@@ -117,7 +117,7 @@
 
 
       @media(min-width:$nav-large-breakpoint){
-        border:none;
+        border:0 !important;
         padding:0;
         margin-right:20px;
 

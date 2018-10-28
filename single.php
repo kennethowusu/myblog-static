@@ -18,6 +18,21 @@
 
    <!-- REALLY stop The Loop. -->
   <?php endif; ?>
-  <?php get_footer(); ?>
+
 
 </div>
+<div class="rlt-post-container">
+
+
+  <div class="rlt-post-cont">
+    <div class="rlt-post">
+      <div class="rlt-post-img-cont">
+        <img src="" class='rlt-post-img' alt="">
+      </div>
+      <p class='rlt-post-title'></p>
+    </div>
+  </div>
+
+
+</div>
+<?php get_footer(); ?>

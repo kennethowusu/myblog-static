@@ -224,6 +224,13 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Fredoka One"; }
 
+.footer {
+  background-color: #ececec;
+  padding: 15px;
+  text-align: center;
+  font-size: 22px;
+  color: #828282; }
+
 .main-menu > .menu-item, .main-menu > .menu-item > .sub-menu > .menu-item {
   text-transform: capitalize;
   border-top: 1px solid #eee;
@@ -316,7 +323,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex; } }
 @media (min-width: 806px) {
   .main-menu > .menu-item {
-    border: none;
+    border: 0 !important;
     padding: 0;
     margin-right: 20px; } }
 @media (min-width: 900px) {

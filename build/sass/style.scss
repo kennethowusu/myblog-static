@@ -17,6 +17,7 @@
 
 
 //import layout styles
+@import 'layout/footer';
 
 
 //
@@ -26,7 +27,8 @@
           'components/search',
           'components/post',
           'components/pagination',
-          'components/single-post';
+          'components/single-post',
+          'components/related-post';
 
 
   //import pages styles

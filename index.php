@@ -9,7 +9,7 @@
            <?php the_post_thumbnail('post-thumbnail',['class'=>'post__img']); ?>
         </a>
       </section>
-      <section class='text-center'>
+      <section class=''>
         <a href="<?php the_permalink(); ?>"class="post__title">
           <h1>
             <?php echo the_title();  ?>
