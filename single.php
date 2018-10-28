@@ -3,7 +3,10 @@
 <div class="single-post">
   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
    <h1 class="single-post-title"><?php the_title(); ?></h1>
-    <?php the_post_thumbnail('large',['class'=>'post-single-thumb']); ?>
+   <div class="">
+     <?php the_post_thumbnail('large',['class'=>'post-single-thumb']); ?>
+   </div>
+
    <p><?php the_content(); ?></p>
   <?php endwhile; else : ?>
 
